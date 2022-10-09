@@ -1,0 +1,80 @@
+.faq {
+   margin-bottom: $offset-section;
+
+   &__top {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__wrapper {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__content {
+      max-width: 768px;
+   }
+
+   &__title {
+      text-align: center;
+      margin-bottom: $offset-secondary;
+
+      &::before {
+         background-image: url('../../img/question-mark-icon.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         z-index: -1;
+      }
+   }
+
+   &__item {
+      margin-bottom: $offset-small;
+      padding: 20px 30px;
+      border: 2px solid $color-gray-dark;
+      border-radius: $border-radius;
+   }
+}
+
+.accordion {
+   --accordion-time: 0.3s;
+
+   &__content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      will-change: max-height;
+      transition: all var(--accordion-time) ease-out;
+      box-sizing: content-box;
+   }
+
+   &__title {
+      font-family: $font-secondary;
+      font-size: 18px;
+   }
+
+   &__text {
+      font-size: 16px;
+      margin-bottom: $offset-small;
+   }
+
+   &__control {
+      outline: none;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.accordion__icon {
+   transition: transform var(--accordion-time) ease-out;
+}
+
+.is-open .accordion__icon {
+   transform: rotate(180deg);
+}
+
+.is-open .accordion__content {
+   opacity: 1;
+}

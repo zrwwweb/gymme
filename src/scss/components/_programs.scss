@@ -1,0 +1,103 @@
+.programs {
+   margin-bottom: $offset-section;
+
+   &__top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: $offset-secondary;
+   }
+
+   &__title {
+      &::before {
+         background-image: url('../../img/calendar.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+      }
+   }
+
+   &__link {
+      position: absolute;
+      padding: 5px 10px;
+      font-family: $font-secondary;
+      background-color: $color-white;
+      left: 5%;
+      bottom: 10%;
+      transition: background-color 0.3s ease-in-out;
+      border-radius: $border-radius;
+   }
+}
+
+.programs__swiper {
+   position: relative;
+   padding-bottom: calc(60px + $offset-main);
+   padding-left: 150px;
+
+   @include tablet {
+      padding-left: 54px;
+   }
+
+   & .swiper-slide {
+      transition: .3s;
+
+      &:hover {
+         cursor: pointer;
+         transform: scale(1.05);
+
+         & .programs__link {
+            background-color: $color-primary;
+         }
+      }
+   }
+}
+
+.programs__pagination {
+   position: absolute;
+   left: 10%;
+   bottom: 0 !important;
+}
+
+.programs__button-prev,
+.programs__button-next {
+   width: 36px;
+   height: 36px;
+   cursor: pointer;
+   position: absolute;
+   right: 10%;
+   bottom: 5px;
+
+   &:hover svg {
+      fill: $color-primary;
+   }
+
+   svg {
+      transition: fill 0.3s ease-in-out;
+      fill: $color-neutral;
+   }
+
+   @include mobile {
+      right: 10px;
+   }
+}
+
+.programs__button-prev {
+   margin-right: calc(36px + $offset-main);
+}
+
+.swiper-slide {
+   position: relative;
+}
+
+.swiper-wrapper {
+   align-items: center;
+}
+
+.swiper-pagination-bullet {
+   background-color: $color-neutral;
+   width: 15px;
+   height: 15px;
+
+   &-active {
+      background-color: $color-neutral;
+   }
+}

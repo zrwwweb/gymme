@@ -1,0 +1,175 @@
+.pricing {
+   margin-bottom: $offset-section;
+
+   &__top {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__title {
+      margin-bottom: $offset-secondary;
+
+      &::before {
+         background-image: url('../../img/pricing-icon.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+      }
+   }
+
+   &__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include tablet {
+         flex-direction: column;
+      }
+   }
+
+   &__item {
+      padding: 60px 100px 80px;
+      background-color: $color-gray-dark;
+      border-radius: $border-radius;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 520px;
+      cursor: pointer;
+      transition: .3s;
+
+      &_black {
+         color: $color-white;
+         background-color: $color-neutral;
+         height: 550px;
+      }
+
+      &:not(:last-child) {
+         margin-right: $offset-main;
+
+         @include tablet {
+            margin-right: 0;
+         }
+      }
+
+      &:hover {
+         transform: scale(1.05);
+
+         & .pricing__btn {
+            box-shadow: 0px 0px 10px 5px $color-primary;
+         }
+
+         & .btn_stroke {
+            box-shadow: 0px 0px 10px 5px $color-neutral;
+         }
+      }
+
+      @include minidesktop {
+         padding: 50px 70px 80px;
+      }
+
+      @include tablet {
+         flex-direction: row;
+         justify-content: center;
+         padding: 40px 92px;
+         height: auto;
+         width: 100%;
+         max-width: 620px;
+         margin-bottom: $offset-main;
+         border-radius: $border-radius;
+
+      }
+
+      @include mobile {
+         padding: 40px;
+      }
+
+      &-top {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         @include tablet {
+            margin-right: $offset-secondary;
+         }
+      }
+
+   }
+
+   &__tarif {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: $color-neutral;
+      color: $color-white;
+      font-family: $font-secondary;
+      letter-spacing: 1px;
+      margin-bottom: 36px;
+
+      &_black {
+         background-color: $color-white;
+         color: $color-neutral;
+      }
+   }
+
+   &__price {
+      font-family: $font-secondary;
+      font-size: $title-font-size;
+      margin-bottom: 5px;
+
+      span {
+         font-size: 30px;
+      }
+   }
+
+   &__btn {
+      transition: .3s;
+   }
+
+   &__descr {
+      margin-bottom: $offset-main;
+   }
+
+   &__list {
+      margin-bottom: $offset-main;
+   }
+
+   &__list-item {
+      position: relative;
+
+
+
+      &:before {
+         position: absolute;
+         content: '';
+         background-image: url('../../img/pricing-check.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         width: 20px;
+         height: 20px;
+         left: -15%;
+         top: -1px;
+      }
+
+      &:not(:last-child) {
+         margin-bottom: $offset-small;
+      }
+
+      &_black {
+         position: relative;
+
+         &:before {
+            position: absolute;
+            content: '';
+            background-image: url('../../img/pricing-check-white.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            left: -15%;
+            top: -1px;
+         }
+      }
+   }
+}

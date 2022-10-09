@@ -1,0 +1,79 @@
+.footer {
+   background-color: $color-neutral;
+   color: $color-white;
+   padding-top: $offset-main;
+   padding-bottom: $offset-main;
+
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+         @include mobile {
+            justify-content: start;
+         }
+      }
+
+      @include mobile {
+         padding: 10px;
+         margin-bottom: $offset-main;
+      }
+   }
+
+   &__logo {
+      cursor: pointer;
+
+      @include mobile {
+         margin-bottom: $offset-main;
+      }
+
+   }
+
+   &__link {
+      transition: color 0.3s ease-in-out;
+
+      &:not(:last-child) {
+         margin-bottom: 6px;
+      }
+
+      &:hover {
+         color: $color-primary;
+      }
+   }
+
+   &__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+   }
+
+   &__social-link {
+      width: 30px;
+      height: 30px;
+
+      svg {
+         fill: $color-white;
+         object-fit: cover;
+         transition: fill 0.3s ease-in-out;
+
+         &:hover {
+            fill: $color-primary;
+         }
+      }
+   }
+
+   &__copy {
+      font-size: 12px;
+      color: $color-gray-dark;
+   }  
+}

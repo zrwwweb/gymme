@@ -1,0 +1,57 @@
+.mission {
+   padding-top: $offset-section;
+   margin-bottom: $offset-section;
+
+   &__wrapper {
+      max-width: 768px;
+      margin: 0 auto;
+   }
+
+   &__title {
+      margin-bottom: $offset-main;
+
+      &::before {
+         background-image: url('../../img/mission-icon.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+      }
+   }
+
+   &__text {
+      font-size: 20px;
+      line-height: $base-line-height;
+      margin-bottom: $offset-main;
+   }
+
+   &__btn {
+      display: inline-flex;
+      align-items: center;
+      font-family: $font-secondary-extra-bold;
+      color: $color-neutral;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+      background-color:transparent;
+      padding: 0;
+      svg {
+         fill: $color-neutral;
+      }
+
+      &:hover {
+         color: $color-primary;
+         background-color:transparent;
+      }
+
+      &:hover svg {
+         fill: $color-primary;
+         margin-left: 15px;
+      }
+   }
+
+   svg {
+      width: 15px;
+      height: 15px;
+      margin-left: 6px;
+      transition: all 0.3s ease-in-out;
+   }
+}

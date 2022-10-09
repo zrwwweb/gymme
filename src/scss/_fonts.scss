@@ -1,0 +1,30 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@font-face {
+   font-family: 'InterExtraBold';
+   src: url('../fonts/InterExtraBold.eot');
+   src: url('../fonts/InterExtraBold.eot') format('embedded-opentype'),
+      url('../fonts/InterExtraBold.woff2') format('woff2'),
+      url('../fonts/InterExtraBold.woff') format('woff'),
+      url('../fonts/InterExtraBold.ttf') format('truetype'),
+      url('../fonts/InterExtraBold.svg#InterExtraBold') format('svg');
+}
+
+@font-face {
+   font-family: 'InterBold';
+   src: url('../fonts/InterBold.eot');
+   src: url('../fonts/InterBold.eot') format('embedded-opentype'),
+      url('../fonts/InterBold.woff2') format('woff2'),
+      url('../fonts/InterBold.woff') format('woff'),
+      url('../fonts/InterBold.ttf') format('truetype'),
+      url('../fonts/InterBold.svg#InterBold') format('svg');
+}
+
+@font-face {
+   font-family: 'OpenSansRegular';
+   src: url('../fonts/OpenSansRegular.eot');
+   src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+      url('../fonts/OpenSansRegular.woff2') format('woff2'),
+      url('../fonts/OpenSansRegular.woff') format('woff'),
+      url('../fonts/OpenSansRegular.ttf') format('truetype'),
+      url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}

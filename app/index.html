@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+   <div class="container">
+       <div class="header__wrapper"> 
+            <a class="header__logo logo"><img src="img/logo.svg" alt="Gym me" /></a>
+            <nav data-nav class="header__nav">
+               <ul class="header__list">
+                   <li class="header__item"><a class="header__link" href="#home">Home </a></li>
+                   <li class="header__item"><a class="header__link" href="#aboutUs">About </a></li>
+                   <li class="header__item"><a class="header__link" href="#workouts">Workouts </a></li>
+                   <li class="header__item"><a class="header__link" href="#pricing">Pricing </a></li>
+                   <li class="header__item"><a class="header__link" href="#community">Community </a></li>
+                   <li class="header__item"><a class="header__link" href="#faq">FAQ </a></li>
+               </ul>
+           </nav>
+           <div class="header__buttons"> 
+              <a href="tel:+678888712" class="header__phone">+6 788 887 12</a>
+              <button class="btn btn_reset header__btn">Call Us</button>
+            </div>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
+       </div>
+   </div>
+</header>  
+  <main>
+    <div class="modal">
+   <form class="modal__form form">
+      <button class="modal__btn-close btn_reset"></button>
+      <div class="modal__title">Wanna join & have fun?</div>
+      <div class="modal__subtitle">We will call you as soon as posible</div>
+      <label for="name" class="modal__label">
+         <div class="modal__text">Name</div>
+         <input type="name" name="name" class="modal__input-name modal__input" data-validate-field="name">         
+      </label>
+      <label for="email" class="modal__label">
+         <div class="modal__text">Email</div>
+         <input type="email" name="email" class="modal__input-email modal__input" data-validate-field="email">         
+      </label>
+      <label for="tel" class="modal__label">
+         <div class="modal__text">Telephone</div>
+         <input type="tel" name="tel" class="modal__input-tel modal__input" data-validate-field="tel">         
+      </label>  
+      <button class="btn_reset btn-submit modal__btn">Submit</button>    
+   </form>
+</div>
+    <section class="hero">
+   <div class="container">
+       <div class="hero__wrapper">
+           <h1 class="hero__title">Get the best part of&nbsp;your day
+            <span class="hero__title hero__title_green">-&nbsp;you fit here.</span> </h1>
+           <p class="hero__subtitle">We provide serious fitness but within a fun and friendly, safe space.</p>
+           <button class="btn_fill btn_reset btn hero__btn">Join Now</button>
+       </div>
+   </div>
+   <img class="hero__img" src="img/hero.png" alt="" />
+</section>
+    <section class="mission">
+   <div class="container">
+       <div id="aboutUs" class=" mission__wrapper">
+           <h2 class="title mission__title"> Our mission<span class="title_green">.</span></h2>
+           <p class="mission__text"> We are distinguished by our unsurpassed motivating atmosphere, knowledgeable staff, and premier exercise equipment, which supports our members in meeting their individual fitness goals.</p>
+           <p class="mission__text"> The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to better themselves.</p>
+           <button class="mission__btn btn_reset btn" href="#">
+               Join now               
+               <svg width="22" height="22" viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C4.925 0 0 4.925 0 11C0 17.075 4.925 22 11 22C17.075 22 22 17.075 22 11C22 4.925 17.075 0 11 0ZM8.793 7.707C8.61084 7.5184 8.51005 7.2658 8.51233 7.0036C8.5146 6.7414 8.61977 6.49059 8.80518 6.30518C8.99059 6.11977 9.2414 6.0146 9.5036 6.01233C9.7658 6.01005 10.0184 6.11084 10.207 6.293L14.207 10.293C14.3945 10.4805 14.4998 10.7348 14.4998 11C14.4998 11.2652 14.3945 11.5195 14.207 11.707L10.207 15.707C10.0184 15.8892 9.7658 15.99 9.5036 15.9877C9.2414 15.9854 8.99059 15.8802 8.80518 15.6948C8.61977 15.5094 8.5146 15.2586 8.51233 14.9964C8.51005 14.7342 8.61084 14.4816 8.793 14.293L12.086 11L8.793 7.707Z" />
+               </svg>
+            </button>
+       </div>
+   </div>
+</section>
+    <section id="workouts" class="programs">
+   <div class="programs__top">
+       <h2 class="title programs__title">Training programs <span class="title_green">.</span></h2>
+   </div>
+   <div class="programs__slider">
+       <div class="programs__swiper">
+           <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <img src="img/slide-img1.png" alt="" class="programs__slide-img">
+                  <a href="#" class="programs__link">Stretching</a>
+               </div>
+               <div class="swiper-slide">
+                  <img src="img/slide-img2.png" alt="" class="programs__slide-img">
+                  <a href="#" class="programs__link">Boxing</a>
+               </div>
+               <div class="swiper-slide">
+                  <img src="img/slide-img3.png" alt="" class="programs__slide-img">
+                  <a href="#" class="programs__link">Body Pump</a>
+               </div>
+               <div class="swiper-slide">
+                  <img src="img/slide-img4.png" alt="" class="programs__slide-img">
+                  <a href="#" class="programs__link">Yoga</a>
+               </div>
+               <div class="swiper-slide">
+                  <img src="img/slide-img5.png" alt="" class="programs__slide-img">
+                  <a href="#" class="programs__link">Full Body</a>
+               </div>
+               <div class="swiper-slide">
+                  <img src="img/slide-img4.png" alt="" class="programs__slide-img">
+                  <a href="#" class="programs__link">Yoga</a>
+               </div>
+           </div>
+           <div class="programs__pagination"> </div>
+           <div class="programs__button-prev">  
+            <svg width="40" height="40" viewBox="0 0 40 40"  xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3334 9.87508 38.3334 20.0001C38.3334 30.1251 30.125 38.3334 20 38.3334C9.87504 38.3334 1.66671 30.1251 1.66671 20.0001C1.66671 9.87508 9.87504 1.66675 20 1.66675ZM23.6784 14.5117C23.982 14.1974 24.15 13.7764 24.1462 13.3394C24.1424 12.9024 23.9671 12.4844 23.6581 12.1754C23.3491 11.8664 22.931 11.6911 22.494 11.6873C22.057 11.6835 21.636 11.8515 21.3217 12.1551L14.655 18.8217C14.3426 19.1343 14.1671 19.5581 14.1671 20.0001C14.1671 20.442 14.3426 20.8659 14.655 21.1784L21.3217 27.8451C21.636 28.1487 22.057 28.3167 22.494 28.3129C22.931 28.3091 23.3491 28.1338 23.6581 27.8248C23.9671 27.5158 24.1424 27.0977 24.1462 26.6607C24.15 26.2238 23.982 25.8027 23.6784 25.4884L18.19 20.0001L23.6784 14.5117Z" />
+            </svg>
+           </div>
+           <div class="programs__button-next">
+            <svg width="38" height="38" viewBox="0 0 38 38"  xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0.666748C8.87496 0.666748 0.666626 8.87508 0.666626 19.0001C0.666626 29.1251 8.87496 37.3334 19 37.3334C29.125 37.3334 37.3333 29.1251 37.3333 19.0001C37.3333 8.87508 29.125 0.666748 19 0.666748ZM15.3216 13.5117C15.018 13.1974 14.85 12.7764 14.8538 12.3394C14.8576 11.9024 15.0329 11.4844 15.3419 11.1754C15.6509 10.8664 16.069 10.6911 16.506 10.6873C16.943 10.6835 17.364 10.8515 17.6783 11.1551L24.345 17.8217C24.6574 18.1343 24.8329 18.5581 24.8329 19.0001C24.8329 19.442 24.6574 19.8659 24.345 20.1784L17.6783 26.8451C17.364 27.1487 16.943 27.3167 16.506 27.3129C16.069 27.3091 15.6509 27.1338 15.3419 26.8248C15.0329 26.5158 14.8576 26.0977 14.8538 25.6607C14.85 25.2238 15.018 24.8027 15.3216 24.4884L20.81 19.0001L15.3216 13.5117Z" />
+            </svg>  
+           </div>
+       </div>
+   </div>
+</section>
+    <section id="pricing" class="pricing">
+   <div class="container">
+      <div class="pricing__wrapper">
+         <div class="pricing__top">
+            <h2 class="title pricing__title">
+               Pricing plan
+               <span class="title_green">.</span>
+            </h2>
+         </div>
+         <div class="pricing__items">
+            <div class="pricing__item">
+               <div class="pricing__item-top">
+                  <div class="pricing__tarif">Basic</div>
+                  <div class="pricing__price">20<span>$</span></div>
+                  <div class="pricing__descr">/month</div>
+               </div>
+               <div class="pricing__item-bottom">
+                  <ul class="pricing__list">
+                     <li class="pricing__list-item">
+                        unlimited gym access
+                     </li>
+                     <li class="pricing__list-item">
+                        1 training programs
+                     </li>
+                     <li class="pricing__list-item">
+                        free fitness consultation
+                     </li>
+                  </ul>
+                  <button class="pricing__btn btn btn_stroke btn_reset">Join Now</button>
+               </div>
+            </div>
+            <div class="pricing__item pricing__item_black">
+               <div class="pricing__item-top">
+                  <div class="pricing__tarif pricing__tarif_black">Premium</div>
+                  <div class="pricing__price">35<span>$</span></div>
+                  <div class="pricing__descr">/month</div>
+               </div>
+               <div class="pricing__item-bottom">
+                  <ul class="pricing__list">
+                     <li class="pricing__list-item pricing__list-item_black">
+                        unlimited gym access
+                     </li>
+                     <li class="pricing__list-item pricing__list-item_black">
+                        5 training programs
+                     </li>
+                     <li class="pricing__list-item pricing__list-item_black">
+                        free fitness consultation
+                     </li>
+                     <li class="pricing__list-item pricing__list-item_black">
+                        personal trainer
+                     </li>
+                  </ul>
+                  <button class="pricing__btn btn btn_fill btn_reset">Join Now</button>
+               </div>
+            </div>
+            <div class="pricing__item">
+               <div class="pricing__item-top">
+                  <div class="pricing__tarif">Elite</div>
+                  <div class="pricing__price">49<span>$</span></div>
+                  <div class="pricing__descr">/month</div>
+               </div>
+               <div class="pricing__item-bottom">
+                  <ul class="pricing__list">
+                     <li class="pricing__list-item">
+                        unlimited gym access
+                     </li>
+                     <li class="pricing__list-item">
+                        all training programs
+                     </li>
+                     <li class="pricing__list-item">
+                        free fitness consultation
+                     </li>
+                     <li class="pricing__list-item">
+                        personal trainer
+                     </li>
+                     <li class="pricing__list-item">
+                        50% off drinks
+                     </li>
+                  </ul>
+                  <button class="pricing__btn btn btn_stroke btn_reset">Join Now</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+    <section id="community" class="community">
+   <div class="community__wrapper">
+      <h2 class="title community__title">
+         Community
+         <span class="title_green">.</span>
+      </h2>
+         <div class="community__slider">
+            <div class="community__swiper">
+                <div class="swiper-wrapper community__swiper-wrapper">
+                  <div class="swiper-slide community__slide">
+                       <img src="img/community-slider-img1.png" alt="" class="community__slide-img">
+                       <div class="community__content">
+                           <div class="community__quote">“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”</div>
+                           <div class="community__author">Mark A.</div>
+                       </div>
+                  </div>
+                  <div class="swiper-slide community__slide">
+                     <img src="img/community-slider-img2.png" alt="" class="community__slide-img">
+                     <div class="community__content">
+                        <div class="community__quote">“Great location, great price and great, helpful people. What to want more?”</div>
+                        <div class="community__author">Lauren K.</div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide community__slide">
+                     <img src="img/community-slider-img3.png" alt="" class="community__slide-img">
+                     <div class="community__content">
+                        <div class="community__quote">“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”</div>
+                        <div class="community__author">Stella B.</div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide community__slide">
+                     <img src="img/community-slider-img1.png" alt="" class="community__slide-img">
+                     <div class="community__content">
+                         <div class="community__quote">“Gymme changed my life. Not only physically but mentally as well. I’m a better mother, and all around better human being because of this gym.”</div>
+                         <div class="community__author">Mark A.</div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide community__slide">
+                     <img src="img/community-slider-img2.png" alt="" class="community__slide-img">
+                     <div class="community__content">
+                        <div class="community__quote">“Great location, great price and great, helpful people. What to want more?”</div>
+                        <div class="community__author">Lauren K.</div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide community__slide">
+                     <img src="img/community-slider-img3.png" alt="" class="community__slide-img">
+                     <div class="community__content">
+                        <div class="community__quote">“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”</div>
+                        <div class="community__author">Stella B.</div>
+                     </div>
+                  </div>
+                  
+                </div>
+                <div class="community__button-prev">  
+                  <svg width="40" height="40" viewBox="0 0 40 40"  xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66675C30.125 1.66675 38.3334 9.87508 38.3334 20.0001C38.3334 30.1251 30.125 38.3334 20 38.3334C9.87504 38.3334 1.66671 30.1251 1.66671 20.0001C1.66671 9.87508 9.87504 1.66675 20 1.66675ZM23.6784 14.5117C23.982 14.1974 24.15 13.7764 24.1462 13.3394C24.1424 12.9024 23.9671 12.4844 23.6581 12.1754C23.3491 11.8664 22.931 11.6911 22.494 11.6873C22.057 11.6835 21.636 11.8515 21.3217 12.1551L14.655 18.8217C14.3426 19.1343 14.1671 19.5581 14.1671 20.0001C14.1671 20.442 14.3426 20.8659 14.655 21.1784L21.3217 27.8451C21.636 28.1487 22.057 28.3167 22.494 28.3129C22.931 28.3091 23.3491 28.1338 23.6581 27.8248C23.9671 27.5158 24.1424 27.0977 24.1462 26.6607C24.15 26.2238 23.982 25.8027 23.6784 25.4884L18.19 20.0001L23.6784 14.5117Z" />
+                  </svg>
+                </div>
+                <div class="community__button-next">
+                  <svg width="38" height="38" viewBox="0 0 38 38"  xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0.666748C8.87496 0.666748 0.666626 8.87508 0.666626 19.0001C0.666626 29.1251 8.87496 37.3334 19 37.3334C29.125 37.3334 37.3333 29.1251 37.3333 19.0001C37.3333 8.87508 29.125 0.666748 19 0.666748ZM15.3216 13.5117C15.018 13.1974 14.85 12.7764 14.8538 12.3394C14.8576 11.9024 15.0329 11.4844 15.3419 11.1754C15.6509 10.8664 16.069 10.6911 16.506 10.6873C16.943 10.6835 17.364 10.8515 17.6783 11.1551L24.345 17.8217C24.6574 18.1343 24.8329 18.5581 24.8329 19.0001C24.8329 19.442 24.6574 19.8659 24.345 20.1784L17.6783 26.8451C17.364 27.1487 16.943 27.3167 16.506 27.3129C16.069 27.3091 15.6509 27.1338 15.3419 26.8248C15.0329 26.5158 14.8576 26.0977 14.8538 25.6607C14.85 25.2238 15.018 24.8027 15.3216 24.4884L20.81 19.0001L15.3216 13.5117Z" />
+                  </svg> 
+                </div>
+         </div>
+      </div>
+   </div>
+</section>
+    <section id="faq" class="faq">
+   <div class="container">
+      <div class="faq__wrapper">
+         <div class="faq__content">
+            <div class="faq__top">
+               <div class="title faq__title">
+                  FAQ<span class="title_green">.</span>
+               </div>
+            </div>
+            <div class="faq__item">
+               <div class="faq__accordion faq__accordion-1">
+                  <button class="btn_reset accordion__control" aria-expanded="false">
+                     <span class="accordion__title">How can I book a workout class?</span>
+                     <span class="accordion__icon">                                        
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.916504C5.43121 0.916504 0.916626 5.43109 0.916626 10.9998C0.916626 16.5686 5.43121 21.0832 11 21.0832C16.5687 21.0832 21.0833 16.5686 21.0833 10.9998C21.0833 5.43109 16.5687 0.916504 11 0.916504ZM7.98138 8.97675C7.80849 8.80978 7.57694 8.71738 7.33659 8.71947C7.09624 8.72156 6.86633 8.81796 6.69638 8.98792C6.52642 9.15788 6.43001 9.38779 6.42792 9.62814C6.42584 9.86848 6.51823 10.1 6.68521 10.2729L10.3519 13.9396C10.5238 14.1114 10.7569 14.208 11 14.208C11.243 14.208 11.4761 14.1114 11.648 13.9396L15.3147 10.2729C15.4817 10.1 15.5741 9.86848 15.572 9.62814C15.5699 9.38779 15.4735 9.15788 15.3035 8.98792C15.1336 8.81796 14.9037 8.72156 14.6633 8.71947C14.423 8.71738 14.1914 8.80978 14.0185 8.97675L11 11.9953L7.98138 8.97675Z" />
+                        </svg>   
+                     </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true"> 
+                     <p class="accordion__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.</p>
+                     <p class="accordion__text">You can cancel your class online by logging back in and click "cancel booking".</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq__item">
+               <div class="faq__accordion faq__accordion-2">
+                  <button class="btn_reset accordion__control" aria-expanded="false">
+                     <span class="accordion__title">Can I pay by cash for my membership?</span>
+                     <span class="accordion__icon">                                        
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.916504C5.43121 0.916504 0.916626 5.43109 0.916626 10.9998C0.916626 16.5686 5.43121 21.0832 11 21.0832C16.5687 21.0832 21.0833 16.5686 21.0833 10.9998C21.0833 5.43109 16.5687 0.916504 11 0.916504ZM7.98138 8.97675C7.80849 8.80978 7.57694 8.71738 7.33659 8.71947C7.09624 8.72156 6.86633 8.81796 6.69638 8.98792C6.52642 9.15788 6.43001 9.38779 6.42792 9.62814C6.42584 9.86848 6.51823 10.1 6.68521 10.2729L10.3519 13.9396C10.5238 14.1114 10.7569 14.208 11 14.208C11.243 14.208 11.4761 14.1114 11.648 13.9396L15.3147 10.2729C15.4817 10.1 15.5741 9.86848 15.572 9.62814C15.5699 9.38779 15.4735 9.15788 15.3035 8.98792C15.1336 8.81796 14.9037 8.72156 14.6633 8.71947C14.423 8.71738 14.1914 8.80978 14.0185 8.97675L11 11.9953L7.98138 8.97675Z" />
+                        </svg>   
+                     </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true"> 
+                     <p class="accordion__text">Unfortunately not, we don't have the facilities on site to take cash payments. You must pay by card or direct debit. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq__item">
+               <div class="faq__accordion faq__accordion-3">
+                  <button class="btn_reset accordion__control" aria-expanded="false">
+                     <span class="accordion__title">What age do I need to be to join?</span>
+                     <span class="accordion__icon">                                        
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.916504C5.43121 0.916504 0.916626 5.43109 0.916626 10.9998C0.916626 16.5686 5.43121 21.0832 11 21.0832C16.5687 21.0832 21.0833 16.5686 21.0833 10.9998C21.0833 5.43109 16.5687 0.916504 11 0.916504ZM7.98138 8.97675C7.80849 8.80978 7.57694 8.71738 7.33659 8.71947C7.09624 8.72156 6.86633 8.81796 6.69638 8.98792C6.52642 9.15788 6.43001 9.38779 6.42792 9.62814C6.42584 9.86848 6.51823 10.1 6.68521 10.2729L10.3519 13.9396C10.5238 14.1114 10.7569 14.208 11 14.208C11.243 14.208 11.4761 14.1114 11.648 13.9396L15.3147 10.2729C15.4817 10.1 15.5741 9.86848 15.572 9.62814C15.5699 9.38779 15.4735 9.15788 15.3035 8.98792C15.1336 8.81796 14.9037 8.72156 14.6633 8.71947C14.423 8.71738 14.1914 8.80978 14.0185 8.97675L11 11.9953L7.98138 8.97675Z" />
+                        </svg>   
+                     </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true"> 
+                     <p class="accordion__text">If you really want to hit the gym, you need to be at least 14 to 15 years old, though you should refrain from heavy lifting and concentrate on doing body weight exercises, yoga etc.</p>
+                     <p class="accordion__text">If you want to lift weights, you could start off with light weights as your bones are still growing.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq__item">
+               <div class="faq__accordion faq__accordion-4">
+                  <button class="btn_reset accordion__control" aria-expanded="false">
+                     <span class="accordion__title">Are there any lockers?</span>
+                     <span class="accordion__icon">                                        
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.916504C5.43121 0.916504 0.916626 5.43109 0.916626 10.9998C0.916626 16.5686 5.43121 21.0832 11 21.0832C16.5687 21.0832 21.0833 16.5686 21.0833 10.9998C21.0833 5.43109 16.5687 0.916504 11 0.916504ZM7.98138 8.97675C7.80849 8.80978 7.57694 8.71738 7.33659 8.71947C7.09624 8.72156 6.86633 8.81796 6.69638 8.98792C6.52642 9.15788 6.43001 9.38779 6.42792 9.62814C6.42584 9.86848 6.51823 10.1 6.68521 10.2729L10.3519 13.9396C10.5238 14.1114 10.7569 14.208 11 14.208C11.243 14.208 11.4761 14.1114 11.648 13.9396L15.3147 10.2729C15.4817 10.1 15.5741 9.86848 15.572 9.62814C15.5699 9.38779 15.4735 9.15788 15.3035 8.98792C15.1336 8.81796 14.9037 8.72156 14.6633 8.71947C14.423 8.71738 14.1914 8.80978 14.0185 8.97675L11 11.9953L7.98138 8.97675Z" />
+                        </svg>   
+                     </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true"> 
+                     <p class="accordion__text">Our lockers are double protected, we give you the keys at the entrance to the club.</p>
+                     <p class="accordion__text">Also, we are fully responsible for any loss.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq__item">
+               <div class="faq__accordion faq__accordion-5">
+                  <button class="btn_reset accordion__control" aria-expanded="false">
+                     <span class="accordion__title">How do I cancel my membership?</span>
+                     <span class="accordion__icon">                                        
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.916504C5.43121 0.916504 0.916626 5.43109 0.916626 10.9998C0.916626 16.5686 5.43121 21.0832 11 21.0832C16.5687 21.0832 21.0833 16.5686 21.0833 10.9998C21.0833 5.43109 16.5687 0.916504 11 0.916504ZM7.98138 8.97675C7.80849 8.80978 7.57694 8.71738 7.33659 8.71947C7.09624 8.72156 6.86633 8.81796 6.69638 8.98792C6.52642 9.15788 6.43001 9.38779 6.42792 9.62814C6.42584 9.86848 6.51823 10.1 6.68521 10.2729L10.3519 13.9396C10.5238 14.1114 10.7569 14.208 11 14.208C11.243 14.208 11.4761 14.1114 11.648 13.9396L15.3147 10.2729C15.4817 10.1 15.5741 9.86848 15.572 9.62814C15.5699 9.38779 15.4735 9.15788 15.3035 8.98792C15.1336 8.81796 14.9037 8.72156 14.6633 8.71947C14.423 8.71738 14.1914 8.80978 14.0185 8.97675L11 11.9953L7.98138 8.97675Z" />
+                        </svg>   
+                     </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true"> 
+                     <p class="accordion__text">Booking a workout classe is simple for our members. Simply log into your Gymme account on our website and click "book class" button . You can book 3 days in advance at 9pm.</p>
+                     <p class="accordion__text">You can cancel your class online by logging back in and click "cancel booking".</p>
+                  </div>
+               </div>
+            </div>
+            <div class="faq__item">
+               <div class="faq__accordion faq__accordion-6">
+                  <button class="btn_reset accordion__control" aria-expanded="false">
+                     <span class="accordion__title">Is there water available at the gym?</span>
+                     <span class="accordion__icon">                                        
+                        <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0.916504C5.43121 0.916504 0.916626 5.43109 0.916626 10.9998C0.916626 16.5686 5.43121 21.0832 11 21.0832C16.5687 21.0832 21.0833 16.5686 21.0833 10.9998C21.0833 5.43109 16.5687 0.916504 11 0.916504ZM7.98138 8.97675C7.80849 8.80978 7.57694 8.71738 7.33659 8.71947C7.09624 8.72156 6.86633 8.81796 6.69638 8.98792C6.52642 9.15788 6.43001 9.38779 6.42792 9.62814C6.42584 9.86848 6.51823 10.1 6.68521 10.2729L10.3519 13.9396C10.5238 14.1114 10.7569 14.208 11 14.208C11.243 14.208 11.4761 14.1114 11.648 13.9396L15.3147 10.2729C15.4817 10.1 15.5741 9.86848 15.572 9.62814C15.5699 9.38779 15.4735 9.15788 15.3035 8.98792C15.1336 8.81796 14.9037 8.72156 14.6633 8.71947C14.423 8.71738 14.1914 8.80978 14.0185 8.97675L11 11.9953L7.98138 8.97675Z" />
+                        </svg>   
+                     </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true"> 
+                     <p class="accordion__text">In each corner of the gym we have coolers filled with clean water, you can choose hot or cold.</p>
+                     <p class="accordion__text">You can come and pour water in plastic glass and drink at any time.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+    <section class="join">
+   <div class="container">
+      <div class="join__wrapper">
+         <img class="join__image" src="img/join-bg.png" alt="">
+         <div class="join__content">
+            <h2 class="title join__title">
+               Wanna join <span class="title_green">&</span> have fun?
+            </h2>
+            <p class="join__subtitle">
+               We'll keep you updated on the things you need to know about Gymme. Nothing more, nothing less.
+            </p>
+            <button class="btn_fill btn btn_reset">Join Now</button>
+         </div>
+      </div>
+   </div>
+</section>
+    
+    
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__item d-flex-column-space-between">
+        <a href="" class="footer__logo logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <div class="footer__copy">All rights reserved. Gymme 2022.</div>
+      </div>
+      <div class="footer__item">
+          <a href="#" class="footer__link">Contact Us</a>
+          <a href="#" class="footer__link">Help center</a>
+          <a href="#" class="footer__link">Job opportunitites</a>
+          <a href="#" class="footer__link">Gift Cards</a>
+      </div>
+      <div class="footer__item">
+        <a href="#pricing" class="footer__link">Pricing</a>
+        <a href="#aboutUs" class="footer__link">About Us</a>
+        <a href="#community" class="footer__link">Community</a>
+        <a href="#workouts" class="footer__link">Workouts</a>
+        <a href="#faq" class="footer__link">FAQ</a>
+      </div>
+      <div class="footer__item d-flex-column-space-between">
+        <div class="footer__social">
+          <a href="" class="footer__social-link">
+            <?xml version="1.0"?>
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">   
+                 <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.361,18.967l-1.868,0.026 c0,0-0.403,0.079-0.93-0.285c-0.699-0.48-1.358-1.729-1.872-1.567c-0.521,0.166-0.505,1.29-0.505,1.29s0.004,0.198-0.115,0.327 c-0.129,0.139-0.382,0.125-0.382,0.125h-0.837c0,0-1.846,0.153-3.473-1.543c-1.772-1.849-3.338-5.498-3.338-5.498 s-0.092-0.23,0.006-0.348c0.111-0.13,0.41-0.134,0.41-0.134l2-0.01c0,0,0.188,0.033,0.324,0.133 c0.111,0.082,0.174,0.236,0.174,0.236s0.323,0.819,0.752,1.561c0.836,1.446,1.224,1.763,1.508,1.608 c0.414-0.226,0.29-2.044,0.29-2.044s0.008-0.66-0.208-0.954c-0.168-0.229-0.484-0.297-0.622-0.314 c-0.113-0.015,0.071-0.277,0.311-0.395c0.36-0.176,0.996-0.186,1.747-0.179c0.585,0.006,0.754,0.042,0.982,0.098 c0.69,0.167,0.456,0.811,0.456,2.356c0,0.495-0.089,1.191,0.267,1.42c0.154,0.099,0.529,0.015,1.464-1.579 c0.445-0.756,0.778-1.644,0.778-1.644s0.073-0.158,0.186-0.226c0.116-0.07,0.272-0.048,0.272-0.048l2.105-0.013 c0,0,0.632-0.076,0.735,0.211c0.108,0.3-0.236,1.001-1.096,2.148c-1.412,1.884-1.569,1.709-0.396,2.799 c1.12,1.041,1.351,1.547,1.39,1.611C22.339,18.906,21.361,18.967,21.361,18.967z"/>
+            </svg>
+          </a>
+          <a href="" class="footer__social-link">            
+            <?xml version="1.0"?>
+            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">  
+                <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/>
+            </svg>
+          </a>
+          <a href="" class="footer__social-link">            
+            <?xml version="1.0"?>
+            <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"> 
+              <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/>
+            </svg>
+          </a>
+          <a href="" class="footer__social-link">
+            <?xml version="1.0"?>
+            <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"> 
+              <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/>
+            </svg>
+          </a>
+        </div>        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

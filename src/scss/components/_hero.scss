@@ -1,0 +1,68 @@
+.hero {
+   background-color: $color-neutral;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+
+   &__wrapper {
+      max-width: 570px;
+      position: relative;
+      z-index: 10;
+   }
+
+   &__img {
+      position: absolute;
+      right: 25%;
+      top: 0;
+      height: 100vh;
+
+      @include minidesktop {
+         right: 10%;
+      }
+
+      @include tablet {
+         right: 0;
+         max-height: 1000px;
+      }
+
+      @include mobile {
+         width: 600px;
+         right: -100px;
+      }
+
+      @include minimobile {
+         width: 500px;
+         height: 100vh;
+
+      }
+   }
+
+   &__title {
+      z-index: 10;
+      font-family: "InterExtraBold";
+      font-weight: 800;
+      color: $color-white;
+      font-size: $title-fz;
+      line-height: 62px;
+      margin-bottom: $offset-main;
+
+      &_green {
+         color: $color-primary;
+         display: block;
+      }
+
+      @include mobile {
+         font-size: 40px;
+         max-width: 340px;
+      }
+   }
+
+   &__subtitle {
+      color: $color-white;
+      font-family: $base-font;
+      font-size: 24px;
+      line-height: $base-line-height;
+      margin-bottom: $offset-main;
+      max-width: 415px;
+   }
+}
