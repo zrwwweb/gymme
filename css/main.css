@@ -29,6 +29,7 @@
 }
 html {
   box-sizing: border-box;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -41,6 +42,9 @@ html {
 body {
   margin: 0;
   font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
 }
 
 img {
@@ -171,11 +175,11 @@ li {
 
 .header {
   background-color: transparent;
-  z-index: 100;
   position: absolute;
   left: 0;
-  right: 0;
   top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .header__wrapper {
   padding: 20px 0;
@@ -475,13 +479,13 @@ li {
 .hero__wrapper {
   max-width: 570px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 .hero__img {
   position: absolute;
   right: 25%;
-  top: 0;
   height: 100vh;
+  z-index: 0;
 }
 @media (max-width: 1200px) {
   .hero__img {
@@ -507,7 +511,6 @@ li {
   }
 }
 .hero__title {
-  z-index: 10;
   font-family: "InterExtraBold";
   font-weight: 800;
   color: #fff;
@@ -842,24 +845,17 @@ li {
 }
 .community__wrapper {
   position: relative;
+  padding-left: 200px;
+}
+@media (max-width: 991px) {
+  .community__wrapper {
+    padding-left: 30px;
+    padding-bottom: 50px;
+  }
 }
 .community__slider {
   height: 480px;
-}
-.community__swiper {
-  padding-left: 10px;
-  height: 480px;
-  width: 1000px;
-  float: right;
   overflow: hidden;
-}
-@media (max-width: 1024px) {
-  .community__swiper {
-    float: none;
-    padding-left: 0;
-    overflow: visible;
-    width: 772px;
-  }
 }
 .community__title {
   padding-left: 60px;
@@ -870,15 +866,6 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   left: 60px;
-}
-.community__slide-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  height: 480px;
 }
 .community__content {
   position: absolute;
@@ -928,6 +915,18 @@ li {
   left: 5%;
   cursor: pointer;
 }
+@media (max-width: 1180px) {
+  .community__button-prev,
+.community__button-next {
+    bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .community__button-prev,
+.community__button-next {
+    bottom: 0;
+  }
+}
 .community__button-prev:hover svg,
 .community__button-next:hover svg {
   fill: #4AE290;
@@ -936,13 +935,6 @@ li {
 .community__button-next svg {
   transition: fill 0.3s ease-in-out;
   fill: #131316;
-}
-@media (max-width: 1200px) {
-  .community__button-prev,
-.community__button-next {
-    right: 5%;
-    bottom: -80px;
-  }
 }
 
 .community__button-next {
@@ -1059,7 +1051,8 @@ li {
 }
 @media (max-width: 1024px) {
   .join__image {
-    left: 0;
+    left: auto;
+    right: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1079,6 +1072,7 @@ li {
   .join__content {
     padding-top: 300px;
     padding-left: 30px;
+    padding-bottom: 0;
   }
 }
 .join__title {

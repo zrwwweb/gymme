@@ -56,21 +56,21 @@ var programsSwiper = new Swiper('.programs__swiper', {
 var communitySwiper = new Swiper('.community__swiper', {
   direction: 'horizontal',
   slidesPerView: 2.5,
+  spaceBetween: 32,
   navigation: {
     nextEl: '.community__button-next',
     prevEl: '.community__button-prev'
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.8,
+      slidesPerView: 1,
       spaceBetween: 16
     },
-    480: {
-      slidesPerView: 2.5,
-      spaceBetween: 16,
-      freeMode: true
+    760: {
+      slidesPerView: 2,
+      spaceBetween: 16
     },
-    1025: {
+    1024: {
       slidesPerView: 2.5,
       spaceBetween: 32
     }
@@ -252,33 +252,33 @@ var validation = new JustValidate('.form');
 validation.addField('.modal__input-name', [{
   rule: 'minLength',
   value: 3,
-  errorMessage: 'Имя должно состоять минимум из 3 символов'
+  errorMessage: 'Name must be at least 3 characters long'
 }, {
   rule: 'maxLength',
   value: 30
 }, {
   rule: 'required',
   value: true,
-  errorMessage: 'Введите имя!'
+  errorMessage: 'Enter your name!'
 }]).addField('.modal__input-email', [{
   rule: 'required',
   value: true,
-  errorMessage: 'Email обязателен'
+  errorMessage: 'Email is required'
 }, {
   rule: 'email',
   value: true,
-  errorMessage: 'Введите корректный Email'
+  errorMessage: 'Please enter a valid Email'
 }]).addField('.modal__input-tel', [{
   rule: 'required',
   value: true,
-  errorMessage: 'Телефон обязателен'
+  errorMessage: 'Phone required'
 }, {
   rule: 'function',
   validator: function validator() {
     var phone = telSelector.inputmask.unmaskedvalue();
     return phone.length === 10;
   },
-  errorMessage: 'Введите корректный телефон'
+  errorMessage: 'Please enter a valid phone number'
 }]).onSuccess(function (event) {
   var _console;
 
@@ -292,7 +292,7 @@ validation.addField('.modal__input-name', [{
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
-        console.log('Отправлено');
+        console.log('Submitted');
       }
     }
   };
