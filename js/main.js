@@ -57,6 +57,7 @@ var communitySwiper = new Swiper('.community__swiper', {
   direction: 'horizontal',
   slidesPerView: 2.5,
   spaceBetween: 32,
+  loop: true,
   navigation: {
     nextEl: '.community__button-next',
     prevEl: '.community__button-prev'

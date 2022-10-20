@@ -856,6 +856,25 @@ li {
 .community__slider {
   height: 480px;
   overflow: hidden;
+  padding-left: 400px;
+}
+@media (max-width: 1600px) {
+  .community__slider {
+    padding-left: 200px;
+  }
+}
+@media (max-width: 1380px) {
+  .community__slider {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 1240px) {
+  .community__slider {
+    padding-left: 0;
+  }
+}
+.community__swiper {
+  overflow: hidden;
 }
 .community__title {
   padding-left: 60px;
@@ -911,14 +930,15 @@ li {
   height: 36px;
   outline: none;
   position: absolute;
-  bottom: 0;
-  left: 5%;
+  bottom: 20px;
+  left: 12%;
   cursor: pointer;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1220px) {
   .community__button-prev,
 .community__button-next {
-    bottom: 50px;
+    bottom: 20px;
+    left: 20px;
   }
 }
 @media (max-width: 991px) {
