@@ -847,31 +847,37 @@ li {
   position: relative;
   padding-left: 200px;
 }
+@media (max-width: 1400px) {
+  .community__wrapper {
+    padding-left: 40px;
+  }
+}
 @media (max-width: 991px) {
   .community__wrapper {
     padding-left: 30px;
     padding-bottom: 50px;
   }
 }
+@media (max-width: 660px) {
+  .community__wrapper {
+    padding-left: 18%;
+  }
+}
+@media (max-width: 580px) {
+  .community__wrapper {
+    padding-left: 14%;
+  }
+}
+@media (max-width: 460px) {
+  .community__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .community__slider {
   height: 480px;
   overflow: hidden;
-  padding-left: 400px;
-}
-@media (max-width: 1600px) {
-  .community__slider {
-    padding-left: 200px;
-  }
-}
-@media (max-width: 1380px) {
-  .community__slider {
-    padding-left: 100px;
-  }
-}
-@media (max-width: 1240px) {
-  .community__slider {
-    padding-left: 0;
-  }
+  padding-right: 0px;
 }
 .community__swiper {
   overflow: hidden;
@@ -931,20 +937,26 @@ li {
   outline: none;
   position: absolute;
   bottom: 20px;
-  left: 12%;
+  left: 20px;
   cursor: pointer;
 }
-@media (max-width: 1220px) {
+@media (max-width: 1400px) {
   .community__button-prev,
 .community__button-next {
-    bottom: 20px;
-    left: 20px;
+    bottom: -60px;
+    left: 40px;
   }
 }
 @media (max-width: 991px) {
   .community__button-prev,
 .community__button-next {
-    bottom: 0;
+    bottom: -20px;
+  }
+}
+@media (max-width: 660px) {
+  .community__button-prev,
+.community__button-next {
+    left: 38%;
   }
 }
 .community__button-prev:hover svg,

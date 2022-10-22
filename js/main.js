@@ -55,7 +55,7 @@ var programsSwiper = new Swiper('.programs__swiper', {
 });
 var communitySwiper = new Swiper('.community__swiper', {
   direction: 'horizontal',
-  slidesPerView: 2.5,
+  slidesPerView: 3.2,
   spaceBetween: 32,
   loop: true,
   navigation: {
@@ -67,12 +67,12 @@ var communitySwiper = new Swiper('.community__swiper', {
       slidesPerView: 1,
       spaceBetween: 16
     },
-    760: {
+    660: {
       slidesPerView: 2,
       spaceBetween: 16
     },
     1024: {
-      slidesPerView: 2.5,
+      slidesPerView: 3,
       spaceBetween: 32
     }
   }
